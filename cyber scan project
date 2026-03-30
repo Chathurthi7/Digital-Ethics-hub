@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: #0d1117; /* GitHub Dark Mode color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .scanner-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #00ff41; /* Matrix Green */
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+    overflow: hidden;
+  }
+
+  /* The Moving Scan Line */
+  .scan-line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #00ff41;
+    box-shadow: 0 0 20px #00ff41;
+    top: 0;
+    animation: scan 3s linear infinite;
+    z-index: 2;
+  }
+
+  /* Scanning Animation */
+  @keyframes scan {
+    0% { top: 0; }
+    50% { top: 100%; }
+    100% { top: 0; }
+  }
+
+  /* Cyber Text */
+  .status-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #00ff41;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  /* Grid background for a tech look */
+  .grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="scanner-container">
+    <div class="grid"></div>
+    <div class="scan-line"></div>
+    <div class="status-text">SYSTEM SCANNING...</div>
+  </div>
+
+</body>
+</html>
