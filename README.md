@@ -1,5 +1,5 @@
 Digital Ethics Hub
-Here is a beautiful, comprehensive description you can paste into your README.md or the repository description box. It bridges your interests in storytelling, design, and technology.
+Here is it, bridges your interests in storytelling, design, and technology.
 Project Overview
 The Digital Ethics Hub is a multidisciplinary space dedicated to navigating the complex intersection of Cyber Ethics, Journalism, and Digital Animation. In an era defined by rapid AI evolution and shifting digital landscapes, this project seeks to examine how we maintain integrity, truth, and human-centric values in the stories we tell and the media we create.
 Core Objectives
